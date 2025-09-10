@@ -1,8 +1,8 @@
 app_name = "rentals"
-app_title = "Manage Renatals in Frappe"
+app_title = "Rentals"
 app_publisher = "BWH"
-app_description = "BWH"
-app_email = "sdsd@gmail.com"
+app_description = "Manage Rentals in Frappe"
+app_email = "sdsW@gmail.com"
 app_license = "mit"
 
 # Apps
@@ -15,7 +15,7 @@ app_license = "mit"
 # 	{
 # 		"name": "rentals",
 # 		"logo": "/assets/rentals/logo.png",
-# 		"title": "Manage Renatals in Frappe",
+# 		"title": "Rentals",
 # 		"route": "/rentals",
 # 		"has_permission": "rentals.api.permission.has_app_permission"
 # 	}

@@ -1,6 +1,6 @@
-### Manage Renatals in Frappe
+### Rentals
 
-BWH
+Manage Rentals in Frappe
 
 ### Installation
 

@@ -1,9 +1,9 @@
 [project]
 name = "rentals"
 authors = [
-    { name = "BWH", email = "sdsd@gmail.com"}
+    { name = "BWH", email = "sdsW@gmail.com"}
 ]
-description = "BWH"
+description = "Manage Rentals in Frappe"
 requires-python = ">=3.10"
 readme = "README.md"
 dynamic = ["version"]
