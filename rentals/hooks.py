@@ -5,6 +5,9 @@ app_description = "Manage Rentals in Frappe"
 app_email = "sdsW@gmail.com"
 app_license = "mit"
 
+
+fixtures = [{"dt" :"Vehicle Type", "filters" : {"is_standard": 1}}, "Rentals Settings"]
+
 # Apps
 # ------------------
 
@@ -118,7 +121,7 @@ app_license = "mit"
 # Permissions evaluated in scripted ways
 
 # permission_query_conditions = {
-# 	"Event": "frappe.desk.doctype.event.event.get_permission_query_conditions",
+# 	"Vehicle": "rentals.api.get_permission_query_conditions_for_vehicle",
 # }
 #
 # has_permission = {
@@ -148,23 +151,28 @@ app_license = "mit"
 # Scheduled Tasks
 # ---------------
 
-# scheduler_events = {
-# 	"all": [
-# 		"rentals.tasks.all"
-# 	],
-# 	"daily": [
-# 		"rentals.tasks.daily"
-# 	],
-# 	"hourly": [
-# 		"rentals.tasks.hourly"
-# 	],
-# 	"weekly": [
-# 		"rentals.tasks.weekly"
-# 	],
-# 	"monthly": [
-# 		"rentals.tasks.monthly"
-# 	],
-# }
+scheduler_events = {
+	# "all": [
+	# 	"rentals.tasks.all"
+	# ],
+	# "daily": [
+	# 	"rentals.tasks.daily"
+	# ],
+	# "hourly": [
+	# 	"rentals.tasks.hourly"
+	# ],
+	# "weekly": [
+	# 	"rentals.tasks.weekly"
+	# ],
+	# "monthly": [
+	# 	"rentals.tasks.monthly"
+	# ],
+    "Cron": {
+        "30 15 * * 3": [
+           "rentals.api.send_payment_reminders",
+        ]
+    }
+}
 
 # Testing
 # -------

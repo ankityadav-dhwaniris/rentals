@@ -1,0 +1,18 @@
+[
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Vehicle Type",
+  "is_standard": 1,
+  "modified": "2025-09-24 15:57:02.070593",
+  "name": "Sedan"
+ },
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Vehicle Type",
+  "is_standard": 1,
+  "modified": "2025-09-24 15:56:55.411781",
+  "name": "Suv"
+ }
+]
